@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 80vh;
+    background-color: #000000;
+    color: #FFFFBF;
+    background-image: url(img/background.jpg);
+    background-repeat: no-repeat;
+    background-position: 100% 10%;
+   
+}
+
+nav {
+    position:absolute;
+    width: 100%;
+    display: flex;
+    font-family: 'Montserrat';    
+}
+
+
+#menu{
+    display: flex;
+    width: 50%;
+}
+
+#menu a{
+    font-size: 20px;
+    padding: 5px;
+    margin: 5px 0 0 5px;
+    display: block;
+    text-decoration: none;
+    color: #FFFFBF;
+}
+
+
+#menu a:hover{
+    background-color:#FFFFBF;
+    color: #000000;
+    font-weight: bold;
+
+    transition: .5s ease;
+}
+
+
+#sociais {
+    padding: 5px;
+    width: 50%;
+    display: flex;
+    justify-content: end;
+    margin-right: 15px;
+}
+
+#sociais img {
+    width: 40px;
+    padding: 5px;      
+}
+
+
+#container {
+    margin-top: 12%;
+    height: 56%;
+    width: 100%;
+    position: absolute;
+    display: flex;
+   
+}
+#container div {
+    width: 50%;
+    align-items: center;
+    display: flex;
+    
+}
+#container h1 {
+    margin: 20px 40px;
+    font-size: 210px;
+    line-height: 80%;
+    font-family: 'Bebas Neue';
+}
+
+#avatar{
+    justify-content: center;
+    flex-direction: column;
+
+    animation-name: animacaoAvatar;
+    animation-duration: 1400ms;
+    animation-iteration-count: infinite;
+}
+
+#avatar h2 {
+    margin-top: 5px;
+    font-size: 25px;
+    font-family: 'Montserrat';
+}
+
+#avatar h3 {
+    font-size: 12px;
+    font-family: 'Montserrat';
+}
+
+#container img {
+    width: 180px;
+    height: 180px;
+    padding: 10px;
+ 
+}
+
+
+@keyframes animacaoAvatar {
+
+    0% {margin-top: 0px;
+    }
+
+    50% {margin-top: 15px;
+    }
+
+    100% {margin-top: 0px;
+    }
+}
+
+
+
+
+
+

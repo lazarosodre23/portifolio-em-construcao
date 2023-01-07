@@ -5,12 +5,13 @@
 }
 
 body {
-    width: 80vh;
+    width: 100%;
+    height: 100%;
     background-color: #000000;
     color: #FFFFBF;
     background-image: url(img/background.jpg);
     background-repeat: no-repeat;
-    background-position: 100% 10%;
+    background-position: right 10%;
 
 }
 
@@ -25,6 +26,10 @@ nav {
 #menu{
     display: flex;
     width: 50%;
+}
+
+#menu2 {
+    display: none;
 }
 
 .btn {
@@ -56,6 +61,10 @@ nav {
     display: flex;
     justify-content: end;
     margin-right: 15px;
+}
+
+.footer {
+    display: none;
 }
 
 #sociais img {
@@ -116,18 +125,142 @@ nav {
  
 }
 
-
 @keyframes animacaoAvatar {
 
-    0% {margin-top: 0px;
-    }
+    0% {margin-top: 0px;}
 
-    50% {margin-top: 15px;
-    }
+    50% {margin-top: 15px;}
 
-    100% {margin-top: 0px;
-    }
+    100% {margin-top: 0px;}
 }
 
 
 
+@media (max-width: 1126px) {
+    body {
+        background-image: url(img/background.2.jpg);
+        display: inline;
+        background-size: cover;
+    }
+
+    
+
+    nav{
+        display: inline;
+        justify-content: center;
+    }
+
+    #menu {
+        width: 100%;
+        justify-content: center;
+    }
+
+    #sociais {
+        display: none;
+    }
+
+    .btn {
+        font-size: 18px;
+        font-weight: bold;
+        color:#FFFFBF;
+    }
+
+    .btn:hover {
+        background-color:#00000065;
+        font-weight: bold;
+        border-radius: 2px;
+    }
+    
+    #container {
+        display: flex;
+        width: 100%;  
+    }
+
+    #container div {
+        justify-content: center;
+        width: 120%;
+        color: #FFFFBF;
+    }
+
+    #container h1 {
+        margin: 25px;
+        font-size: 180px;
+    }
+    
+    .footer {
+        display: flex;
+        align-items: flex-end;
+        height: 100vh;
+        justify-content: center;
+        background-position-x: center;
+    }
+    .footer img{
+        width: 30px;
+        padding: 5px;
+    }
+}
+
+@media (max-width: 620px) {
+    body {
+        width: 100%;
+        height: 100%;
+        background-image: none;
+        display: block;
+    }
+    
+    #menu {
+        display: none;
+    }
+    #menu2 {
+        font-family: 'Montserrat';
+        margin: -3%;   
+        display: flex;
+        align-items: flex-end;
+        height: 80vh;
+        justify-content: center;
+        background-position-x: center;
+    }
+
+    .btn1 {
+        display: inline-block;
+        text-decoration: none;
+    
+        font-size: 15px;
+        color: #FFFFBF;
+    
+        padding: 3px;
+        margin: 5px 0 0 5px;
+        
+       
+        height: 30px;
+    
+        overflow: hidden; 
+        position: relative;
+
+    }
+
+    #container h1 {
+        margin: 30px;
+        font-size: 120px;
+    }
+
+    #container img {
+        width: 150px;
+        height: 150px;
+        padding: 10px;
+    }
+    #avatar h2 {
+        margin-top: 5px;
+        font-size: 20px;
+        font-family: 'Montserrat';
+    }
+    
+    #avatar h3 {
+        font-size: 10px;
+        font-family: 'Montserrat';
+    }
+    .footer {
+        height: 10vh;
+        
+    }
+}
